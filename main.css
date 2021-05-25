@@ -1,0 +1,131 @@
+html{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	font-family: 'Arial',sans-serif;
+	font-size: 16px;
+}
+
+.site-calc{
+	margin: 0 auto;
+	max-width: 400px;
+	height: 100vh;
+	background-color: #ececec;
+}
+.container{
+	max-width: 380px;
+	padding: 0 10px;
+	margin: 0 auto;
+
+}
+.calculator{
+	position: relative;
+}
+.result{
+	position: relative;
+	padding: 10px;
+	height: 30vh;
+}
+.buttons{
+	height: 45vh;
+	width: 360px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.buttons a{
+	margin: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 70px;
+	height: 70px;
+	border-radius: 10px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #ececec;
+	box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+	10px 10px 15px rgba(80,80,80,0.12);
+	color:#000;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+a:active{
+	box-shadow: -10px -10px 15px rgba(80,80,80,0.12),
+	10px 10px 15px rgba(255,255,255,0.5);
+	color:#000;
+	background-color: #000;
+	color:#fff;
+}
+.buttons .calc__arf{
+	color:deepskyblue;
+	font-size: 28px;
+}
+.number__delete svg{
+	width: 36px;
+}
+.number__delete svg g{
+	fill:deepskyblue;
+}
+.enter__input, .result__box{
+	position: absolute;
+	right: 0;
+	padding: 20px;
+	width: 90%;
+	text-align: right;
+	border:none;
+	outline:none;
+	background: none;
+	font-size: 40px;
+	color:blue;
+	overflow: auto;
+}
+.enter__input{
+	top: 30%;
+	transform:translateY(-50%);
+}
+.enter__line{
+	display: block;
+	position: absolute;
+	top: 30%;
+	right: 20px;
+	transform:translateY(-50%);
+	width: 1px;
+	height: 46px;
+	background-color: blue;
+}
+.result__box{
+	top: 42%;
+}
+.show__arf{
+	position: absolute;
+	top: 36%;
+	font-size: 40px;
+	color:rgb(0,0,150);
+	margin-left: 10px;
+}
+.result__calc1{
+	display: flex;
+	align-items: center;
+	position: absolute;
+	top: 70%;
+	font-size: 40px;
+	color:rgb(0,0,150);
+	margin-left: 10px;
+}
+.result__number{
+	width: 300px;
+	margin-left: 10px;
+	font-size: 45px;
+	font-weight:bold;
+	color: blue;
+	overflow: auto;
+}
+.d-none{
+	display: none;
+}
